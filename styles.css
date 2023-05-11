@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  header {
+    background-color: #0da6ba;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header img {
+    height: 15px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .text-inputs {
+    margin-bottom: 10px;
+  }
+  
+  .text-inputs label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .text-inputs input {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .button-container {
+    margin-top: 10px;
+  }
+  
+  .thumbnail-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .img-thumbnail {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Make sure images don't exceed container width */
+  }
+  
+  canvas {
+    border: 1px solid #000;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 100%; /* Ensure canvas fits within its container */
+    height: auto;
+  }
+  

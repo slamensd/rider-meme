@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  
+<script src="https://cdn.jsdelivr.net/npm/ipfs-http-client@52.0.2/dist/index.min.js"></script>
+
+</head>
+<body>
+    <h1 class="text-center">Nippy Meme Maker</h1>
+    <p><center>Just a fun little meme maker. Choose a thumbnail, add your top & bottom message, and generate your meme!</center></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-thumbnails">
+                    <!-- Add your 50 image thumbnails here -->
+<!-- Repeated pattern from 1 to 50 -->
+<img src="/images/NFRENS_ArtworkSocial-01.jpg" data-src="/images/NFRENS_ArtworkSocial-01.jpg" alt="Image 1" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-02.jpg" data-src="/images/NFRENS_ArtworkSocial-02.jpg" alt="Image 2" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-03.jpg" data-src="/images/NFRENS_ArtworkSocial-03.jpg" alt="Image 3" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-04.jpg" data-src="/images/NFRENS_ArtworkSocial-04.jpg" alt="Image 4" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-05.jpg" data-src="/images/NFRENS_ArtworkSocial-05.jpg" alt="Image 5" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-06.jpg" data-src="/images/NFRENS_ArtworkSocial-06.jpg" alt="Image 6" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-07.jpg" data-src="/images/NFRENS_ArtworkSocial-07.jpg" alt="Image 7" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-08.jpg" data-src="/images/NFRENS_ArtworkSocial-08.jpg" alt="Image 8" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-09.jpg" data-src="/images/NFRENS_ArtworkSocial-09.jpg" alt="Image 9" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-10.jpg" data-src="/images/NFRENS_ArtworkSocial-10.jpg" alt="Image 10" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-11.jpg" data-src="/images/NFRENS_ArtworkSocial-11.jpg" alt="Image 11" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-12.jpg" data-src="/images/NFRENS_ArtworkSocial-12.jpg" alt="Image 12" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-13.jpg" data-src="/images/NFRENS_ArtworkSocial-13.jpg" alt="Image 13" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-14.jpg" data-src="/images/NFRENS_ArtworkSocial-14.jpg" alt="Image 14" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-15.jpg" data-src="/images/NFRENS_ArtworkSocial-15.jpg" alt="Image 15" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-16.jpg" data-src="/images/NFRENS_ArtworkSocial-16.jpg" alt="Image 16" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-17.jpg" data-src="/images/NFRENS_ArtworkSocial-17.jpg" alt="Image 17" class="img-thumbnail">
+<!-- Continued pattern from 18 to 50 -->
+<img src="/images/NFRENS_ArtworkSocial-18.jpg" data-src="/images/NFRENS_ArtworkSocial-18.jpg" alt="Image 18" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-19.jpg" data-src="/images/NFRENS_ArtworkSocial-19.jpg" alt="Image 19" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-20.jpg" data-src="/images/NFRENS_ArtworkSocial-20.jpg" alt="Image 20" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-21.jpg" data-src="/images/NFRENS_ArtworkSocial-21.jpg" alt="Image 21" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-22.jpg" data-src="/images/NFRENS_ArtworkSocial-22.jpg" alt="Image 22" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-23.jpg" data-src="/images/NFRENS_ArtworkSocial-23.jpg" alt="Image 23" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-24.jpg" data-src="/images/NFRENS_ArtworkSocial-24.jpg" alt="Image 24" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-25.jpg" data-src="/images/NFRENS_ArtworkSocial-25.jpg" alt="Image 25" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-26.jpg" data-src="/images/NFRENS_ArtworkSocial-26.jpg" alt="Image 26" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-27.jpg" data-src="/images/NFRENS_ArtworkSocial-27.jpg" alt="Image 27" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-28.jpg" data-src="/images/NFRENS_ArtworkSocial-28.jpg" alt="Image 28" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-29.jpg" data-src="/images/NFRENS_ArtworkSocial-29.jpg" alt="Image 29" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-30.jpg" data-src="/images/NFRENS_ArtworkSocial-30.jpg" alt="Image 30" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-31.jpg" data-src="/images/NFRENS_ArtworkSocial-31.jpg" alt="Image 31" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-32.jpg" data-src="/images/NFRENS_ArtworkSocial-32.jpg" alt="Image 32" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-33.jpg" data-src="/images/NFRENS_ArtworkSocial-33.jpg" alt="Image 33" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-34.jpg" data-src="/images/NFRENS_ArtworkSocial-34.jpg" alt="Image 34" class="img-thumbnail">
+<!-- Continued pattern from 35 to 50 -->
+<img src="/images/NFRENS_ArtworkSocial-35.jpg" data-src="/images/NFRENS_ArtworkSocial-35.jpg" alt="Image 35" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-36.jpg" data-src="/images/NFRENS_ArtworkSocial-36.jpg" alt="Image 36" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-37.jpg" data-src="/images/NFRENS_ArtworkSocial-37.jpg" alt="Image 37" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-38.jpg" data-src="/images/NFRENS_ArtworkSocial-38.jpg" alt="Image 38" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-39.jpg" data-src="/images/NFRENS_ArtworkSocial-39.jpg" alt="Image 39" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-40.jpg" data-src="/images/NFRENS_ArtworkSocial-40.jpg" alt="Image 40" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-41.jpg" data-src="/images/NFRENS_ArtworkSocial-41.jpg" alt="Image 41" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-42.jpg" data-src="/images/NFRENS_ArtworkSocial-42.jpg" alt="Image 42" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-43.jpg" data-src="/images/NFRENS_ArtworkSocial-43.jpg" alt="Image 43" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-44.jpg" data-src="/images/NFRENS_ArtworkSocial-44.jpg" alt="Image 44" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-45.jpg" data-src="/images/NFRENS_ArtworkSocial-45.jpg" alt="Image 45" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-46.jpg" data-src="/images/NFRENS_ArtworkSocial-46.jpg" alt="Image 46" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-47.jpg" data-src="/images/NFRENS_ArtworkSocial-47.jpg" alt="Image 47" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-48.jpg" data-src="/images/NFRENS_ArtworkSocial-48.jpg" alt="Image 48" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-49.jpg" data-src="/images/NFRENS_ArtworkSocial-49.jpg" alt="Image 49" class="img-thumbnail">
+<img src="/images/NFRENS_ArtworkSocial-50.jpg" data-src="/images/NFRENS_ArtworkSocial-50.jpg" alt="Image 50" class="img-thumbnail">
+
+
+
+
+                    <!-- ... -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="meme-generator">
+                    <div class="meme-canvas">
+                        <canvas id="memeCanvas" width="500" height="500"></canvas>
+                    </div>
+                    <div class="text-inputs">
+                        <div>
+                          <label for="topText">Top Text</label>
+                          <input type="text" id="topText" placeholder="Top Text">
+                        </div>
+                        <div>
+                          <label for="bottomText">Bottom Text</label>
+                          <input type="text" id="bottomText" placeholder="Bottom Text">
+                        </div>
+                      </div>
+                      
+                      <div class="button-container">
+                        <button id="generateMemeBtn" class="btn btn-primary">Generate Meme</button>
+                        <button id="postOnTwitterBtn" class="btn btn-primary">Post on Twitter</button>
+                      </div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
